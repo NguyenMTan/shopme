@@ -1,0 +1,57 @@
+﻿/* Brand */
+.Brand .title {
+    margin-top: 15px;
+    font-size: 4rem;
+    font-weight: 500;
+    line-height: 48px;
+}
+
+.Brand .list-brand {
+    margin-top: 80px;
+}
+
+.Brand .item-brand {
+    margin: 18px 0;
+    display: flex;
+    align-items: center;
+    padding: 24px 48px;
+    background: #fff;
+    border-radius: 10px;
+}
+
+.Brand .bg-logo {
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    background-color: #999;
+}
+
+.Brand .logo {
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+}
+
+.Brand .name {
+    margin-left: 120px;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.Brand .action {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    gap: 12px;
+}
+
+.Brand .act {
+    border-radius: 14px;
+    width: 100px;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 42px;
+    background: var(--primary-color);
+    color: #fff;
+}

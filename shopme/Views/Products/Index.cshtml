@@ -1,0 +1,31 @@
+﻿@model IEnumerable<Product>
+
+@{
+    ViewData["Title"] = "Shop me";
+}
+
+<main>
+    <div class="index">
+        <div class="container">
+            <div class="products">
+                <h2 class="heading">Sản phẩm nổi bật</h2>
+                <div class="product-list">
+                    @foreach (var item in Model)
+                    {
+                        <div class="list-item">
+                            <img src="@item.ImageURL"
+                                 alt=""
+                                 class="thumb" />
+                            <div class="info">
+                                <p class="name-product">@item.Name</p>
+                                <p class="price-product">
+                                    <span>@item.Price</span>đ
+                                </p>
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</main>

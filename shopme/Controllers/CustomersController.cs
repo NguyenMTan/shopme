@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using shopme.Data;
 
 namespace shopme.Controllers
@@ -11,10 +12,10 @@ namespace shopme.Controllers
         {
             _context = context;
         }
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            var data = _context.Customers.ToList();
-            return View();
+            var data = await _context.Customers.ToListAsync();
+            return View(data);
         }
     }
 }

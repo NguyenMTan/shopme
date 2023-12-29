@@ -1,23 +1,23 @@
-﻿@model IEnumerable<Brand>
+﻿@model IEnumerable<Customer>
 
 @{
-    ViewData["Title"] = "Manage Brand - ShopMe";
+    ViewData["Title"] = "Manage Customer - ShopMe";
 }
 
 <main>
     <div class="Brand">
         <div class="container">
-            <h2 class="title">Danh sách thương hiệu</h2>
+            <h2 class="title">Danh sách khách hàng</h2>
             <div class="list-brand">
                 @foreach (var item in Model)
                 {
                     <div class="item-brand">
                         <div class="bg-logo">
-                            <img src="@item.Logo"
+                            <img src="@item.ProfilePictureURL"
                                  alt=""
                                  class="logo" />
                         </div>
-                        <h3 class="name">@item.NameBrand</h3>
+                        <h3 class="name">@item.Name</h3>
                         <div class="action">
                             <a href="" class="act act-edit">Edit</a>
                             <a href="" class="act act-details">Details</a>

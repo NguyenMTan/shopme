@@ -15,7 +15,7 @@ namespace shopme.Controllers
         public async Task<IActionResult> Index()
         {
             var allBrand = await _context.Brands.ToListAsync();
-            return View();
+            return View(allBrand);
         }
     }
 }

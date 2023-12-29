@@ -1,0 +1,247 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    background: #f3f4f6;
+}
+
+:root {
+    --primary-color: #2579f2;
+    --color-search: #0a59cc;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.6rem;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+p {
+    cursor: context-menu;
+}
+
+.text-center {
+    display: hiden;
+}
+
+.container {
+    width: 1200px;
+    max-width: calc(100% - 320px);
+    margin: 0 auto;
+}
+
+/* header */
+.header {
+    background-color: var(--primary-color);
+}
+
+.header .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header .row:first-child {
+    padding: 18px 0 18px;
+}
+
+.header .logo {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+}
+
+.header .logo-img {
+    width: 49px;
+    height: 49px;
+}
+
+.header .logo span {
+    color: #fff;
+    font-size: 2.1rem;
+    font-weight: 500;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+}
+
+.label-search {
+    width: 368px;
+    height: 42px;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    font-size: 1.4rem;
+    padding: 0 14px;
+}
+
+.header .search button {
+    position: relative;
+    width: 47px;
+    height: 42px;
+    background: var(--color-search);
+    border-radius: 0 5px 5px 0;
+    left: -5px;
+    border: 1px solid #aaa;
+    cursor: pointer;
+}
+
+.header .search button:active {
+    opacity: 0.9;
+}
+
+.account a,
+.account span {
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 500;
+    padding: 5px;
+}
+
+.account a:hover {
+    text-decoration: underline;
+}
+
+.header .action {
+    background-color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    border: 1px solid #fff;
+    padding: 12px 15px;
+    border-radius: 6px;
+    color: #fff;
+    gap: 7px;
+    cursor: pointer;
+}
+
+.navigation {
+    background: #fff;
+}
+
+.navigation .navigation-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+.navigation .items-right {
+    display: flex;
+    gap: 11px;
+}
+
+.navigation .items-right .icon {
+    width: 18px;
+    height: 18px;
+}
+
+.navigation .items-right p,
+.navigation .items-left .item {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 21px;
+}
+
+.navigation .items-left {
+    display: flex;
+    gap: 21px;
+}
+
+.navigation .items-left .item {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    user-select: none;
+}
+
+.navigation .items-left .item .bg-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 39px;
+    height: 39px;
+    background: var(--primary-color);
+    border-radius: 10px;
+}
+
+.navigation .navDropdown {
+    display: none;
+    position: absolute;
+    top: 134px;
+    border: 1px solid #aaa;
+    border-radius: 8px;
+    background: #fff;
+}
+
+.navigation .navDropdown .item-menu {
+    width: 130px;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.navigation .navDropdown .item-menu:hover {
+    background: #eee;
+}
+
+.navigation .navDropdown .item-menu .link-menu {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+/* product */
+
+.index .products .heading {
+    font-size: 21px;
+    font-weight: 500;
+    line-height: 28px;
+    margin: 21px 0 12px;
+}
+
+.index .product-list {
+    display: flex;
+    gap: 19px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.index .product-list .list-item {
+    border-radius: 6px;
+    border: 1px solid #aaa;
+    margin: 7px 0;
+    cursor: pointer;
+}
+
+.index .product-list .list-item .thumb {
+    width: 284px;
+    height: 135px;
+    border-radius: 6px 6px 0 0;
+    object-fit: cover;
+}
+
+.index .product-list .info {
+    background: #fff;
+    border-radius: 0 0 6px 6px;
+    padding: 5px;
+}
+
+.index .name-product {
+    cursor: pointer;
+    font-size: 1.4rem;
+    line-height: 21px;
+    margin-bottom: 5px;
+}
+
+.index .price-product {
+    cursor: pointer;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 21px;
+}
